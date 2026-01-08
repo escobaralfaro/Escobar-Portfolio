@@ -1,0 +1,5 @@
+Reviewing Item.cs
+
+For starters looking at the top of the class, I don't believe it is neccesary for any of the objects to be public.
+I also feel that each item should have its own class. There is not reason that the fire and heart should have the same class.
+Finally having if else logic in the draw method is bad practice. I think this logic should be handled else where.

@@ -1,0 +1,10 @@
+Cen Gu
+
+11/12
+
+Reviewing StartMenu.cs by Ben
+
+The code efficiently handles essential start menu functions, including displaying the title screen, 
+implementing a smooth text blinking effect, and integrating music playback. 
+The choice to separate concerns¡ªlike drawing the menu and updating the timer for the blinking text¡ªis clear and logical, 
+which makes the code easy to follow.

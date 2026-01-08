@@ -1,0 +1,26 @@
+Readability:
+Benjamin Escobar
+10/21/2024
+Sprint 3
+Dragon.cs
+Hengkai and Benjamin
+10 mins
+I think the Dragon.cs is readable as it not only has method names that explains what it does, such as MoveDragon and ShootFireball. 
+There isn't exactly an order to the methods in terms of one part does movement while another part does collision, so in terms of that
+it isn't as readable as it could be. The Update method can also be made more readable but I can fix that as I am trying to do collision,
+and the collision part is the one that is commented out.
+The variable names are readable as they all explain what they are being used for, without you having to go look at what they do.
+
+Quality:
+Benjamin Escobar
+10/21/2024
+Sprint 3
+LinkEnemyCollision.cs
+Carter
+10 mins
+I think in terms of quality the LinkEnemyCollision should be somewhat maintanable but it will require other methods added, as some of the
+logic and methods used are not in the same file as LinkEnemyCollsion. There are also a lot of methods and variables within the file already
+which can make it a bit harder to maintain.
+A hypothetical change to the game would perhaps be adding either a different kind of enemy to the game, that doesn't work as similar
+as the current enemies do, where we might have to add a differnet kind of collision entirely.
+The current implementation maybe would not easily support that change as we made it this way as the enemies are similar, but it could work.

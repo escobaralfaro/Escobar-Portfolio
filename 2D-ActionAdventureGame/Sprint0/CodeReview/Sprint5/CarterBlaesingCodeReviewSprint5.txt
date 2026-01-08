@@ -1,0 +1,18 @@
+Carter Blaesing code review. Reviewing Will's "TwoPlayerMode.cs""
+
+12/4
+
+Sprint 5
+
+The largest addition to the game came from Will Koran in his addition of TwoPlayerMode. This two player mode is a gamestate that is called instead
+of the single player gamestate if that option is selected in the initial load screen.The biggest noticable change to this mode was of course the
+the second Link. Link2 is  just another instance of Link, and then a second stagemanager, gamehud, and mousecontroller are created and run just
+like our previous single player game logic. Player 2 needed to be accomated for, in StageManager2 now called addition checks for the 
+CollisionHandler, hitbox drawing, room switching logic, and more. DrawDungeon2 now accomated transitioning for link too aswell. Esentially, 
+Will's addition of TwoPlayerMode created a different instance of our game, with of a lot of the same exisiting code. Small tweaks had to be made to 
+almost everything to do existing checks or conditions that were for Link1, onto Link2 aswell. The only notable flaw of this two player mode is
+that Link and Link2 share the same healthbar and inventory. For health at least, we weren't sure what should happen if one player died and the other
+didn't. for the inventory, we didn't know how we would have enough space to have each player have a separate inventory. Since most of the code was
+the same with just a copy for a second player, the code is very easy to understand. KeyboardController was modified to a big case switch block,
+allowing for different controls based on what gamestate you were in, whether that be single play or 2 player or a pause menu etc. Lots of small 
+bugs were found and patched with two player mode simply by forgetting to accomadate somewhere for the second player.  

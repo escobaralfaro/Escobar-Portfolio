@@ -1,0 +1,8 @@
+﻿Code Review for Will's two player mode
+
+The two player mode is a great addition to the game, and it adds a new level of excitement and competition.
+The mode that allows two players to play simultaneously on the same screen.
+There is few issue that two player mode that Link2 do not have its own class or script, it is just a copy of Link class.
+It might cause some issue if we want further develop like get second players postion.(since they share the same heatlh)
+It think it should be separated heatlh but could share the same inventory.
+Two player also cause some buggy stuff like the chat box is not working perfectly in two player mode.

@@ -1,0 +1,8 @@
+﻿Cen GU's Code Review. 
+
+Hengkai's Enemy
+
+Hengkai refactor the enemy code and seperate each enemy to make sure add to list without show everything at one time. 
+even though it is not invisible in previous code, but it influenced the hitbox.
+Hengkai seperate them and load it by number, it helps solve that problem without load everything in one time.
+

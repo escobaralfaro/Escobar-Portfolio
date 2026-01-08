@@ -1,0 +1,15 @@
+Carter Blaesing code review. Reviewing Will's "StageAnimator.cs""
+
+11/11
+
+Sprint 4
+
+One of my favorite quality of life improvements to our game was implement by Will Koran and it was the StageAnimator class.
+This class was designed to add a smooth camera transition between dungeon rooms, as if you were link walking through the door, 
+rather than the previous instant teleport transition between rooms. Will's class is very readible. In this class, there is an 
+'Animate' function which colllects the current room, next room, and notabily direction. This direction, along with an update class that uses
+a constant offset for transition speed, is deterimined in the NextStateDecider class, which knows what direction you are heading based on what door
+you go in. This class calls Animate, adding the smooth += offset from the StateAnimator in the correct direction. This gives a large extra
+layer of depth in terms of feel for the dungeon traversing feeling of the game. This code is very maintainable, with an Offset variable rather than
+a hardcoded number, meaning that just the variable can be altered to change the speed of the transition. Even though the desired speed has been found 
+and set, it would be very easy to understand and make adjustments to his code accordingly. 

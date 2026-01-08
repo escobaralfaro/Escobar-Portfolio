@@ -1,0 +1,22 @@
+﻿Readability:
+Benjamin Escobar
+10/21/2024
+Sprint 5
+Ak47.cs
+Carter
+10 mins
+To be honest I think that the Ak47.cs is not as readable as it could be as there are a lot of variables to keep track off, which could confuse people when
+reading the file. There are only 3 functions so should be good in terms of readability. The variable names are also easy to understand in terms of what they are 
+going to be used for in the file. The update function can be hard to read as there is a lot of layers to it, but should be ok.
+
+Quality:
+Benjamin Escobar
+10/21/2024
+Sprint 5
+Wizzrobe.cs
+Hengkai
+10 mins
+In terms of quality, I dont think the wizzrobe will be easily maintanable as there are nuances to the file, that can be hard to copy though not impossible.
+It doesnt call that many files and also isnt called that much which should make it more maintanable as there isnt a lot of stuff 
+that needs to be changed if wizzrobe is changed.
+The current implemeentation could handle a hypothethical change such as adding another guide, though making it move would be hard.

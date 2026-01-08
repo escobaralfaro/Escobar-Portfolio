@@ -1,0 +1,6 @@
+﻿ GameStateManager.cs by Will and StartMenu.cs by Ben
+
+ GameStateManager.cs: The class has a clear role in managing game states, loading resources, and handling updates and drawing functions. This refactoring was well done by Will
+
+ StartMenu.cs: The class has a clear role in managing the start menu and handling user input. This refactoring was well done by Ben 
+ The UpdateStartMenu method has a nice blinking text effect and ensures background music is playing. These details enhance the user experience.

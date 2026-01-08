@@ -1,0 +1,9 @@
+﻿The team worked well improving their Link game. 
+Carter worked on Link and enemy collisions, handing the damage logic for each of the enemies and for link. 
+These needed much refactoring as enemies were changed and how they were drawn changed. 
+Cen gu worked on items, adding items to spawn like enemies in the items/ enemy map. 
+They disappear once in contact with link. Ben eskobr worked on the blocks and enemy block collisions, and Will worked on drawing the dungeon.
+Both Will and Ben worked to complete the csv file and logic for drawing and changing through the dungeon. 
+Finally, Hengkai worked more on the enemies, changing how they are drawn in the dungeon.
+Going forward to next sprite, we will again assign different necessary implementations to members and encourage each other to get the work done.
+Some logic and bug testing from sprint 3 will continue to get fixed and sorted out as progress continues. 

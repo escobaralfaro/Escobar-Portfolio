@@ -1,0 +1,6 @@
+﻿Carter did the ak47 and improve the some code of wizzrobe that can make it dynamic in different room.
+Will implement the 2 players mode in this sprint which is a big feature. Will also did  did the entire game state pattern.
+Cengu did the fairy follow link and some items function.
+Ben did the moveable block.
+Hengkai implemented the whole invenotry system thast can interact with items and game HUD. Also improved the GameHUD. And the chatbox UI and npc Wizzrobe you can talk to.
+And Shop system that you can buy items from the shop.

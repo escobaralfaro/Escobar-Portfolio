@@ -1,0 +1,6 @@
+﻿The Super bros teams worked further into their Zelda game. 
+Ben Eskobar worked greatly on adding sounds and music to the game, as well as start and end screens. Although the sounds are imperfected, they work correctly within the game.
+Carter worked on adding the GAMEHUD as well as the working healthbar, enemy health, weapon damage, and debugging. Cen gu worked on the mousecontroller, allowing a click to transfer between rooms.
+He also fixed reset and corrected to happen when Link ran out of health, and separated the items into classes. Will worked on StageAnimations and reworking scaling to adjust for the gameHud.
+He also implemented dungeon diving logic to which enemies must be killed before doors unlock and are able to be travelled through. On top of that, he created all of the rooms to the dungeon. 
+Hengkai worked on the inventory page. Some new bugs were introduced that are currently being sorted out, and the game is starting to be polished to our liking.

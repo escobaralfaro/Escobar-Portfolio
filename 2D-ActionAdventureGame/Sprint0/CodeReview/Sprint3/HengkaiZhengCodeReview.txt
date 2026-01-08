@@ -1,0 +1,22 @@
+﻿Readability:
+Hengkai Zheng
+10/21/2024
+Sprint 3
+Enemy_Item_Map.cs
+Hengkai and Will
+10 mins
+The Enemy_Item_Map.cs file is  readable.
+The method names such as GetRoom, GetEnemiesInRoom, and Update are clear, easy to understand code.
+Improvement:
+The private fields _EnemyMap, rooms, roomHeight, roomWidth, _scale, _GraphicsDevice, and _ContentManager are named using underscores as prefixes.
+Better to use camelCase for private fields, without the underscore prefix. 
+
+Quality:
+Hengkai Zheng
+10/21/2024
+Sprint 3
+Enemy_Item_Map.cs
+Will
+10 mins
+The methods GetEnemies() and GetRoom() throw an ArgumentOutOfRangeException if the roomNum parameter is out of range.
+Better to include the valid range in the exception message to provide more context.

@@ -1,0 +1,26 @@
+﻿Readability:
+Author of the code review: [Hengkai Zheng]
+9/30/2024
+Sprint 2
+item.cs
+Author of the .cs file being reviewed: [Cen Gu]
+10 mins
+ Readable: The class is well-organized, with clear distinctions between attackable and unattackable items via the `ItemType` enum. The comments describing item movement and frame switching add clarity to the behavior of the item.
+
+ Readable : Variable names like `Position`, `Speed`, and `SourceRectangles` are intuitive and clearly describe their purpose within the code. The structure of the `Update()` and `Draw()` methods is straightforward and easy to follow.
+
+ Not Readable : The use of "magic numbers" like `500f` for `MovementThreshold` and `4.0f` for `scale` is unclear without additional comments. These values should be defined as constants with meaningful names for better readability.
+
+ Not Readable : The direct coupling of the `KeyboardController` within the `Update()` method reduces readability by introducing dependencies that could have been abstracted. 
+
+Quality:
+Author of the code review: [Hengkai Zheng]
+9/30/2024
+Sprint 2
+Item.cs
+Author of the .cs file being reviewed: [Cen Gu]
+10 mins
+The Item.cs class effectively handles item movement, animation, and state management,
+with a clear distinction between attackable and unattackable items using an enum.
+However, it could benefit from improvements such as encapsulating fields like Sprite and SourceRectangles with properties,
+removing unused imports, and adding null checks for SourceRectangles to avoid potential errors. 

@@ -1,0 +1,6 @@
+﻿William Koran Reviewing Triangle.cs by Cen GU
+
+Right off the bat I noticed an issue with the scaling. Rather than parse the universal scale in from game.cs
+you create your own scale value which is incorrect. This error will also affect the collisions of this item 
+so it would be best to fix this soon. Other than that this file looks pretty solid. I'm assuming more efftects
+will be added in the future as this is the Triforce and has special properties within the game.

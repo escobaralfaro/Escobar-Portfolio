@@ -1,0 +1,27 @@
+﻿Readability:
+Benjamin Escobar
+9/30/2024
+Sprint 2
+KeyboardController.cs
+Will and Cen gu (did the items and blocks) and Hengkai(did enemies)
+10 mins
+I think for the most part the keyboard controller is readable and can be understood fairly quickly. 
+There is a split on what are link controls and what are the other controls such as items and blocks, as well as made sure that all the bools are above the update method. 
+We can still work on it such as making sure that all the link commands are all together and commented, and that all the 
+items and enemies are separated so that its easier to see which controls are for what object. 
+The variable names are easily understandable such as previous item and block and IsMovingRight so that will help make the code more readable.
+
+
+Quality:
+Benjamin Escobar
+9/30/2024
+Sprint 2
+Link.cs
+Will and Carter
+10 mins
+I think in terms of quality the link file should be maintainable even though there is a lot of variables and methods within it. 
+However those are required in the file as link is the player and he needs to not only move around smoothly but also use his sword 
+and bow and boomerang and get damaged. So I think the code is maintainable as some of the movement is in other files that are called in, such as LinkDown. 
+A hypothetical change to the game would perhaps be adding an additional player to the game. 
+The current implementation I think would not that easily support that change as we made it so that there was only one player. 
+However we could just copy a lot of the code used for link and input a second character which would work exactly like link and player one.

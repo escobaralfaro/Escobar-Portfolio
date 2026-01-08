@@ -1,0 +1,18 @@
+Carter Blaesing code review. Reviewing Will's "StageManager.cs""
+
+10/21
+
+Sprint 3
+
+One of the largest changes and improvements to our game was implemented completely by Will. He worked on the 
+csv and drawing the dungeons, and specifically and notably our Stagemanager class, which calls different
+classes within it like NextStageDecider and DungeonMap and the EnemyItemMap. It is quite simple and 
+organized, and I had to understand it to refactor my link and enemy collision handling to be included in it.
+I did this because Stagemanager tracks the stageindex, or what room of the dungeon you are in. This allowed 
+me to only draw and detect collisions for hitboxes of enemies present in that specific room. DrawDungeon and 
+the EnemyitemMap access different csv files fill of 0's and 1's and going forwards more numbers and 
+translates them to blocks/items/enemies, drawing the appropriate in the correct spot. EnemyitemMap has a 
+list of all enemies, which was important for me in drawing and detecting collisions for each enemy in that 
+list. Will uses very clear names for variables and makes many separate files that speak to each other, which 
+make his code very readable. Likewise, his code is maintainable, with variables that can be altered only 
+once and not in each class that needs/ looks at it. 

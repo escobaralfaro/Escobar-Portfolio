@@ -1,0 +1,26 @@
+﻿Readability:
+Benjamin Escobar
+11/12/2024
+Sprint 4
+Bow and Clock and Compass (essentially all the item classes)
+Cen gu 
+10 mins
+I think all the item classes are readable as there a few methods and variables for each and the only difference being what they do.
+The code is nearly 100 lines but also spaced out so can see difference between methods, so will be easier to read and understand.
+The differences should also be easier to figure out due to the naming of the classes and variables, as they all seem to explain
+what they are used for.
+
+Quality:
+Benjamin Escobar
+11/12/2024
+Sprint 4
+GameHUD.cs
+Carter
+10 mins
+The GameHUD class is maintable in that everything that it needs is in the class already. The class is also not really long which means
+it will be easier to chance around to fit someone elses design somewhat though it is tailored to the Zelda's game HUD. There are quite 
+a few variables inside the class however I think all are required and should be easily understood on what the function is.
+A hyptothetical change to the game and class would be add another item onto the game HUD however I think think it will work as there already is
+not that much space left to add anything along with the fact that it was already hard to make and update.
+I dont think the current implementation would easily support the change however, maybe it can work but we would need to make everything already
+in the game HUD smaller.

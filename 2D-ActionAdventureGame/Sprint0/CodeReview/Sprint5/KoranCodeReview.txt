@@ -1,0 +1,5 @@
+WIlliam koran reviewing Fairy.cs by CenGu.
+For starters bad practice that every variable is global.
+I wrote half of the logic for this file while refactoring for two player. 
+Ideally there wouldn't be three boolean variables to determine the logic but thats
+how it had to be given the circumstances.

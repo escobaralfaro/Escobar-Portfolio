@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RollForward>Major</RollForward>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Classes\Blocks\**" />
+    <Compile Remove="Classes\Items\**" />
+    <Compile Remove="Code Reviews\**" />
+    <EmbeddedResource Remove="Classes\Blocks\**" />
+    <EmbeddedResource Remove="Classes\Items\**" />
+    <EmbeddedResource Remove="Code Reviews\**" />
+    <None Remove="Classes\Blocks\**" />
+    <None Remove="Classes\Items\**" />
+    <None Remove="Code Reviews\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Classes\EnemyController.cs" />
+    <Compile Remove="GameStates\GameOver.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Content\boxGhostSpriteSheet.gif" />
+    <None Remove="Content\Game Boy Advance - Danny Phantom The Ultimate Enemy - Box Ghost.gif" />
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AnimatedBlock.cs" Link="Classes\AnimatedBlock.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.ico" />
+    <EmbeddedResource Include="Icon.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.1.303" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Player\Link_Inventory.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+  <Target Name="RestoreDotnetTools" BeforeTargets="Restore">
+    <Message Text="Restoring dotnet tools" Importance="High" />
+    <Exec Command="dotnet tool restore" />
+  </Target>
+</Project>

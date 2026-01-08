@@ -1,0 +1,13 @@
+﻿Carter Blaesing code review. Reviewing Hengkai's "Enemy.cs"
+
+09/30
+
+Sprint 2
+
+Enemy.cs
+
+So this is the full developed code for sprint 2's functionality for the enemies of our game.
+I like his logic and comments, and like the enemies with projectiles have their own Spritesheet load apart from the enemy myself.
+My biggest complaint with his code is that enemy.cs over 400 lines long and contains large nested if statements for handling different logic.
+I think for readability sake, like how I implemented my Link, each different enemy should likely have their own class file, following some sort of enemy implementation. 
+Otherwise, his code makes sense with an easy naming scheme and the logic for his enemies works as wanted. 

@@ -1,0 +1,10 @@
+Cen Gu's Code Review
+
+Review HengKai's link_inventory.cs
+
+12/14
+
+The link_inventory class efficiently handles the addition, removal, and cycling of items, 
+providing a dynamic and scalable framework for managing various item types, including bombs, keys, gems, potions, and more.
+The class also incorporates methods for user-friendly operations, 
+such as toggling the inventory and displaying items in a structured grid layout.
