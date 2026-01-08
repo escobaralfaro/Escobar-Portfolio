@@ -1,0 +1,25 @@
+package ast;
+
+import java.io.PrintStream;
+
+public class Program extends ASTNode {
+
+    final FuncDefList funcDefList;
+
+    public Program(FuncDefList funcDefList, Location loc) {
+        super(loc);
+        this.funcDefList = funcDefList;
+    }
+
+    public FuncDef getFunc() {
+        return null;
+    }
+
+    public FuncDefList getFuncDefList() {
+        return this.funcDefList;
+    }
+
+    public void println(PrintStream ps) {
+        ps.println(this.funcDefList);
+    }
+}
