@@ -1,0 +1,98 @@
+every statement in scala returns a value
+if you just do 3 then scala automatically assigns val res0 to 3
+
+val int1: Int = 1 is immutable
+var int2: Int = 2 is mutable
+
+var x = "Hello" returns var x: String = Hello
+x += 3 
+returns
+    :turns x into Hello3
+
+for(i <- 1 to 10) yield i
+returns:
+    val res3: IndexedSeq[Int] = Vector(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+for(i <- 1 to 10; j <- 1 to i) yield (i, j)
+
+for(i <- 1 to 10; j <- 1 to i) yield if (2*j == 1)
+returns:
+    a long ass list of empty ()
+
+for(i <- 1 to 10; j <- 1 to i; if (2*j == i)) yield (i, j)
+returns:
+    val res6: IndexedSeq[(Int, Int)] = Vector ((2, 1) ...all the way till.. (10, 5))
+
+for(i <- 1 to 10; j = i*i; if (j%2 == 0)) yield j
+returns:
+    val res8: IndexedSeq[Int] = Vector(4, 16, 36, 64, 100)
+
+1 to 10
+returns:
+    scala.collection.immutable.Range.Inclusive = Range 1 to 10
+
+(1 to 10).map((x) => x*x)
+returns:
+    a fucking list of squares up to 100 probably
+
+(1 to 10).map((x) => x*x).filter((x) => x%2 == 0)
+returns:
+    val res12: IndexedSeq[Int] = Vector(4, 16, 36, 64, 100)
+
+var total = 0;
+for (i <- 1 to 10; j = i*i; if (j%2 == 0)) total += j; total
+returns:
+    var total: Int = 220
+    val res14: Int = 220
+
+(1 to 10).map((x) => x*x).filter((x) => x%2 == 0).reduce((x, y) => x+y)
+returns:
+    val res14: Int = 220
+
+set = Set(1, 3, 4, 2, 5)
+returns:
+    val set: Set[Int] = HashSet(5, 1, 2, 3, 4)
+
+val map = Map(1->'a', 3->'c', 4->'d')
+returns:
+    val map: Map[Int, Char] = Map(1->'a', 3->'c', 4->'d')
+
+for (i <- set) yield i
+returns:
+    val res res15: Set[Int] = HashSet(5, 1, 2, 3, 4)
+
+for (i <- set; if (map.containsKey(i))) yield map.get(i) 
+returns:
+    Diego fucked up
+
+val list = (1 :: (2 :: (3 :: Nil)))
+returns:
+    val list: List[Int] = List(1, 2, 3)
+
+list.head
+returns:
+    val res16: Int = 1
+
+list.tail
+returns:
+    val res17: List[Int] = List (2, 3)
+
+list.tail.tail.tail
+returns:
+    val res18: List[Int] = List()
+
+def fib(x: Int): Int = {
+    if (x <= 1) x
+    else fib(x - 1) + fib(x - 2)
+}
+
+fib(100)
+
+def fib2(x:Int, a:Int, b:Int):Int={
+    if (x == 0) b
+    else fib2(x-1, a+b, a)
+}
+
+fib2(5, 1, 0)
+returns:
+    val res4: Int = 5
